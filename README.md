@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Послание от собственника</title>
+  <!-- Подключаем шрифт Inter из Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: white;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      border: 3px solid #CA1A3B;
+      box-shadow: 0 0 15px #CA1A3B;
+      animation: fadeIn 0.5s ease-in;
+      flex: 1;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+      font-family: 'Inter', sans-serif;
+      font-size: 24px;
+    }
+    .thank-you {
+      text-align: center;
+      color: #333;
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+    a {
+      display: block;
+      margin: 10px 0;
+      padding: 10px;
+      background: linear-gradient(to right, #DD4F69, #CA1A3B);
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      text-align: center;
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-style: italic;
+      transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 0 10px rgba(202, 26, 59, 0.5);
+    }
+    a:hover {
+      background: linear-gradient(to right, #CA1A3B, #DD4F69);
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(202, 26, 59, 1);
+    }
+    footer {
+      max-width: 600px;
+      margin: 30px auto 0;
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      color: #888888;
+      text-align: center;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>СПАСИБО ЗА ВАШЕ ДОВЕРИЕ!</h1>
+    <div class="thank-you">
+      <p>Дорогой друг-автолюбитель!</p>
+      <p>Спасибо, что выбрали наш магазин для своего автомобиля. Мы рады, что ваша магнитола или динамики принесут вам море наслаждения от отличного звука в поездках. В качестве бонуса мы подготовили подборку полезных приложений и сайтов — чтобы ваша дорога была ещё круче, с хорошей музыкой, навигацией и тюнингом.</p>
+      <p>С уважением,<br>Собственник магазина [Название магазина, например, "АвтоЗвук PRO"]</p>
+    </div>
+    <a href="https://gurumaps.app/" target="_blank" rel="noopener">Guru Maps</a>
+    <a href="https://onf.ru/radar/" target="_blank" rel="noopener">Radar</a>
+    <a href="https://www.rustore.ru/catalog/app/com.ovz.carscanner.rustore" target="_blank" rel="noopener">Car Scanner</a>
+    <a href="https://www.rustore.ru/catalog/app/com.autolauncher.motorcar" target="_blank" rel="noopener">Car Launcher PRO</a>
+    <a href="https://hudspeed.ru/" target="_blank" rel="noopener">Антирадар Hud Speed</a>
+    <a href="https://vk.com/away.php?to=https%3A%2F%2Fw140.zona.plus%2Ftvseries%2Ffilter%2Fsort-date%3Fysclid%3Dmfb188l4i8319703964&utf=1" target="_blank" rel="noopener">Zona</a>
+  </div>
+
+  <footer>
+    Контакты: info@vashmagazin.ru | Тел: +7 (123) 456-7890<br />
+    Не забудьте поделиться отзывом о покупке — это важно для нас!
+  </footer>
+</body>
+</html>
