@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Мой сайт с градиентом</title>
+  <title>poslanie_ot_sobstvennika</title>
   <!-- Подключаем шрифт Inter из Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet" />
   <style>
