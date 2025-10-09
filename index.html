@@ -26,6 +26,7 @@
       box-shadow: 0 0 15px #CA1A3B;
       animation: fadeIn 0.5s ease-in;
       flex: 1;
+      box-sizing: border-box; /* Чтобы padding не превышал ширину на маленьких экранах */
     }
     @keyframes fadeIn {
       from { opacity: 0; }
@@ -55,10 +56,10 @@
       border-radius: 5px;
       text-align: center;
       font-family: 'Inter', sans-serif;
-      font-size: 16px;       /* увеличенный размер текста */
+      font-size: 16px;
       text-transform: uppercase;
       font-weight: bold;
-      font-style: normal;    /* убран курсив */
+      font-style: normal;
       transition: background 0.3s ease, transform 0.3s ease;
     }
     a:hover {
@@ -74,7 +75,6 @@
       text-align: center;
       line-height: 1.4;
     }
-
     .buttons-row {
       display: flex;
       gap: 10px;
@@ -84,7 +84,6 @@
       flex: 1;
       margin: 0;
     }
-
     .app-title {
       font-family: 'Inter', sans-serif;
       font-weight: 700;
@@ -93,7 +92,6 @@
       margin-bottom: 5px;
       color: #CA1A3B;
     }
-
     .app-description {
       font-family: 'Inter', sans-serif;
       font-size: 16px;
@@ -101,9 +99,89 @@
       margin-bottom: 10px;
       line-height: 1.4;
     }
-
     .single-button {
       margin: 10px 0;
+    }
+
+    /* Медиа-запросы для адаптивности */
+
+    /* Для планшетов и маленьких экранов (меньше 768px) */
+    @media (max-width: 768px) {
+      body {
+        padding: 15px; /* Уменьшаем отступы тела */
+      }
+      .container {
+        padding: 15px; /* Уменьшаем padding контейнера */
+        border-radius: 6px; /* Немного изменяем радиус */
+      }
+      h1 {
+        font-size: 20px; /* Уменьшаем заголовок */
+      }
+      .thank-you {
+        font-size: 14px; /* Уменьшаем текст благодарности */
+      }
+      .app-title {
+        font-size: 14px; /* Уменьшаем заголовки приложений */
+        margin-top: 15px;
+      }
+      .app-description {
+        font-size: 14px; /* Уменьшаем описания */
+        line-height: 1.3; /* Немного корректируем высоту строки */
+      }
+      a {
+        font-size: 14px; /* Уменьшаем кнопки */
+        padding: 8px; /* Уменьшаем padding кнопок */
+      }
+      .buttons-row {
+        gap: 5px; /* Уменьшаем gap между кнопками */
+      }
+      footer {
+        font-size: 12px; /* Уменьшаем footer */
+        margin: 20px auto 0; /* Уменьшаем верхний margin */
+      }
+    }
+
+    /* Для смартфонов (меньше 480px) */
+    @media (max-width: 480px) {
+      body {
+        padding: 10px; /* Ещё меньше отступы тела */
+      }
+      .container {
+        padding: 10px; /* Ещё меньше padding контейнера */
+        border-width: 2px; /* Уменьшаем толщину границы для экономии места */
+        box-shadow: 0 0 10px #CA1A3B; /* Легче тень */
+      }
+      h1 {
+        font-size: 18px; /* Ещё меньше заголовок */
+      }
+      .thank-you {
+        font-size: 13px; /* Уменьшаем дальше */
+      }
+      .app-title {
+        font-size: 13px; /* Уменьшаем заголовки */
+        margin-top: 10px;
+      }
+      .app-description {
+        font-size: 13px; /* Уменьшаем описания */
+      }
+      a {
+        font-size: 13px; /* Уменьшаем кнопки */
+        padding: 6px; /* Уменьшаем padding */
+      }
+      .buttons-row {
+        flex-direction: column; /* Для очень узких экранов — кнопки вертикально */
+        gap: 0; /* Убираем gap, кнопки стекаются */
+      }
+      .buttons-row a {
+        margin: 5px 0; /* Добавляем margin между вертикальными кнопками */
+      }
+      .single-button {
+        margin: 5px 0; /* Уменьшаем margin для одиночных кнопок */
+      }
+      footer {
+        font-size: 11px; /* Самый маленький footer */
+        margin: 15px auto 0;
+      }
     }
   </style>
 </head>
