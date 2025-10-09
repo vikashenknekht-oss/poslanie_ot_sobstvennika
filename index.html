@@ -55,17 +55,15 @@
       border-radius: 5px;
       text-align: center;
       font-family: 'Inter', sans-serif;
-      font-size: 13px;
+      font-size: 16px;       /* увеличенный размер текста */
       text-transform: uppercase;
       font-weight: bold;
-      font-style: italic;
-      transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-      box-shadow: 0 0 10px rgba(202, 26, 59, 0.5);
+      font-style: normal;    /* убран курсив */
+      transition: background 0.3s ease, transform 0.3s ease;
     }
     a:hover {
       background: linear-gradient(to right, #CA1A3B, #DD4F69);
       transform: scale(1.05);
-      box-shadow: 0 0 20px rgba(202, 26, 59, 1);
     }
     footer {
       max-width: 600px;
@@ -76,26 +74,94 @@
       text-align: center;
       line-height: 1.4;
     }
+
+    .buttons-row {
+      display: flex;
+      gap: 10px;
+      margin: 10px 0;
+    }
+    .buttons-row a {
+      flex: 1;
+      margin: 0;
+    }
+
+    .app-title {
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+      font-size: 16px;
+      margin-top: 20px;
+      margin-bottom: 5px;
+      color: #CA1A3B;
+    }
+
+    .app-description {
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      color: black;
+      margin-bottom: 10px;
+      line-height: 1.4;
+    }
+
+    .single-button {
+      margin: 10px 0;
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>СПАСИБО ЗА ВАШЕ ДОВЕРИЕ!</h1>
     <div class="thank-you">
-      <p>Дорогой друг-автолюбитель!</p>
-      <p>Спасибо, что выбрали наш магазин для своего автомобиля. Мы рады, что ваша магнитола или динамики принесут вам море наслаждения от отличного звука в поездках. В качестве бонуса мы подготовили подборку полезных приложений и сайтов — чтобы ваша дорога была ещё круче, с хорошей музыкой, навигацией и тюнингом.</p>
-      <p>С уважением,<br>Собственник магазина [Название магазина, например, "АвтоЗвук PRO"]</p>
+      <p>Примите этот маленький знак внимания от всего нашего сердца</p>
     </div>
-    <a href="https://gurumaps.app/" target="_blank" rel="noopener">Guru Maps</a>
-    <a href="https://onf.ru/radar/" target="_blank" rel="noopener">Radar</a>
-    <a href="https://www.rustore.ru/catalog/app/com.ovz.carscanner.rustore" target="_blank" rel="noopener">Car Scanner</a>
-    <a href="https://www.rustore.ru/catalog/app/com.autolauncher.motorcar" target="_blank" rel="noopener">Car Launcher PRO</a>
-    <a href="https://hudspeed.ru/" target="_blank" rel="noopener">Антирадар Hud Speed</a>
-    <a href="https://vk.com/away.php?to=https%3A%2F%2Fw140.zona.plus%2Ftvseries%2Ffilter%2Fsort-date%3Fysclid%3Dmfb188l4i8319703964&utf=1" target="_blank" rel="noopener">Zona</a>
+
+    <!-- Приложение: Guru Maps -->
+    <div class="app-title">Приложение: Guru Maps</div>
+    <div class="app-description">
+      Просматривайте карту без интернета, отмечайте важные места и сохраняйте поездки для удобного доступа в будущем.
+    </div>
+    <div class="buttons-row">
+      <a href="https://play.google.com/store/apps/details?id=com.bodunov.galileo" target="_blank" rel="noopener">Андроид</a>
+      <a href="https://apps.apple.com/us/app/guru-maps-offline-navigation/id321745474" target="_blank" rel="noopener">IOS</a>
+    </div>
+
+    <!-- Приложение: Car Scanner ELM OBD2 -->
+    <div class="app-title">Приложение: Car Scanner ELM OBD2</div>
+    <div class="app-description">
+      Наблюдайте за параметрами работы Вашего автомобиля в режиме реального времени, считывайте и сбрасывайте ошибки и стоп-кадры, следите за результатами самодиагностики ЭБУ, замеряйте разгон автомобиля, ведите статистику расхода топлива и многое другое.
+    </div>
+    <div class="buttons-row">
+      <a href="https://www.rustore.ru/catalog/app/com.ovz.carscanner.rustore" target="_blank" rel="noopener">Андроид</a>
+      <a href="https://apps.apple.com/ru/app/car-scanner-elm-obd2/id1259933623" target="_blank" rel="noopener">IOS</a>
+    </div>
+
+    <!-- Приложение: Car Launcher PRO -->
+    <div class="app-title">Приложение: Car Launcher PRO</div>
+    <div class="app-description">
+      Удобный автомобильный лаунчер для Android-устройств с функцией бортового компьютера. Позволяет легко запускать приложения, отслеживать поездки и настраивать интерфейс под свои нужды.
+    </div>
+    <div class="buttons-row">
+      <a href="https://www.rustore.ru/catalog/app/com.autolauncher.motorcar" target="_blank" rel="noopener">Андроид</a>
+     </div>
+
+    <!-- Приложение: Антирадар Hud Speed -->
+    <div class="app-title">Приложение: Антирадар Hud Speed</div>
+    <div class="app-description">
+      Приложение-антирадар с функцией проекции на экран. Помогает водителям избежать камер ДПС, просто положив телефон на приборную панель.
+    </div>
+    <a href="https://hudspeed.ru/zayavka/" target="_blank" rel="noopener" class="single-button">Антирадар Hud Speed</a>
+
+    <!-- ZONA -->
+    <div class="app-title">Приложение: ZONA</div>
+    <div class="app-description">
+      Бесплатный просмотр более 80000 фильмов и более 200 каналов TV, с удобным фильтром и поиском.
+    </div>
+    <div class="buttons-row">
+      <a href="https://w140.zona.plus/tvseries/filter/sort-date?ysclid=mfb188l4i8319703964" target="_blank" rel="noopener">Браузер</a>
+      <a href="https://app.zonadro.id/index.html?ref=share" target="_blank" rel="noopener">Андроид</a>
+    </div>
   </div>
 
   <footer>
-    Контакты: info@vashmagazin.ru | Тел: +7 (123) 456-7890<br />
     Не забудьте поделиться отзывом о покупке — это важно для нас!
   </footer>
 </body>
